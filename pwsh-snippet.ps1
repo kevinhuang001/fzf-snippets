@@ -71,8 +71,8 @@ function _fzf_edit {
         return
     }
 
-    # 优先使用 bat，如果不存在则使用 type (Windows cmd 兼容)
-    $previewCmd = 'bat --color=always --style=numbers {} 2>nul || type {}'
+    # 优先使用 bat，如果不存在则使用 cat (Unix) 或 type (Windows)
+    $previewCmd = 'bat --color=always --style=numbers {} 2>nul || cat {} 2>nul || type {}'
 
     $selected = Get-ChildItem -Path . -File -Force -Name | fzf --header "Select file to open with $editor" --preview $previewCmd
     if ($selected) {
