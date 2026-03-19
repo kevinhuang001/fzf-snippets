@@ -31,6 +31,9 @@ All commands are prefixed with `fzf` for easy discovery.
 | `fzfenv` | Search and modify environment variables for the current session. |
 | `fzfgb` | Search and switch Git branches (supports automatic stash if local conflicts exist). |
 
+### Preview (fzfnvim)
+![fzfnvim Preview](./snapshot.png)
+
 ## 🛠️ Dependencies
 
 For the best experience, we recommend installing the following tools:
