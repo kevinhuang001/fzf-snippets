@@ -13,7 +13,7 @@ curl -fsSL https://raw.githubusercontent.com/kevinhuang001/fzf-snippets/master/i
 
 ### Windows (PowerShell)
 ```powershell
-Invoke-RestMethod -Uri https://raw.githubusercontent.com/kevinhuang001/fzf-snippets/master/install.ps1 | pwsh
+Invoke-RestMethod -Uri https://raw.githubusercontent.com/kevinhuang001/fzf-snippets/master/install.ps1 | Invoke-Expression
 ```
 
 > **Note**: After installation, please restart your terminal or run `source ~/.zshrc` (macOS/Linux) or `. $PROFILE` (Windows) to apply the changes.
